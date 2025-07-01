@@ -1,0 +1,39 @@
+<mvc:View
+  controllerName="ui5.walkthrough.controller.AddInvoice"
+  xmlns="sap.m"
+  xmlns:core="sap.ui.core"
+  xmlns:mvc="sap.ui.core.mvc"
+  	xmlns:f="sap.ui.layout.form"
+  xmlns:wt="ui5.walkthrough.control"
+>
+  <!-- Pagina de creare factură -->
+  <Page
+    title="{i18n>addInvoiceTitle}"
+    showNavButton="true"
+    navButtonPress=".onNavBack">
+    
+    <content>
+      <f:SimpleForm editable="true">
+
+        <Label text="{i18n>numeClientLabel}" labelFor="numeInput"/>
+        <Input id="numeInput"/>
+
+        <Label text="{i18n>prenumeClientLabel}" labelFor="prenumeInput"/>
+        <Input id="prenumeInput"/>
+
+        <Label text="{i18n>adresaLabel}" labelFor="adresaInput"/>
+        <TextArea id="adresaInput" rows="3"/>
+
+        <Label text="{i18n>produsLabel}" labelFor="produsInput"/>
+        <Input id="produsInput"/>
+
+        <Label text="{i18n>pretLabel}" labelFor="pretInput"/>
+        <Input id="pretInput" type="Number"/>
+
+        <Button text="{i18n>saveButton}" press=".onSaveFactura" type="Emphasized"/>
+        
+      </f:SimpleForm>
+    </content>
+    
+  </Page>
+</mvc:View>

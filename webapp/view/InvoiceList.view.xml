@@ -13,6 +13,13 @@
 					width="50%"
 					search=".onFilterInvoices"
 				/>
+				<Button
+					text="{i18n>addInvoiceButtonText}"
+					type="Emphasized"
+					press=".onGoToAddInvoice"
+					icon="sap-icon://add"
+					tooltip="{i18n>addInvoiceButtonTooltip}"
+				/>
 			</Toolbar>
 		</headerToolbar>
 		<Table
