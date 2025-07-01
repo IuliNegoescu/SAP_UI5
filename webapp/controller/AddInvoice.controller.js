@@ -8,7 +8,7 @@ sap.ui.define([
     return Controller.extend("ui5.walkthrough.controller.AddInvoice", {
       
       onInit: function () {
-        alert("Hello")
+       // alert("test")
         // Poți pune aici inițializări dacă e nevoie
       },
   
